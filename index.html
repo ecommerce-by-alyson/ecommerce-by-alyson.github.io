@@ -128,6 +128,37 @@
 	  footer nav a:hover {
 	    text-decoration: underline;
 	  }
+
+	/* === Icon Row Styling === */
+  .icon-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--gap);
+    align-items: center;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile: show only the first 3; keep 5-column layout from collapsing oddly */
+  @media (max-width: 640px) {
+    .icon-row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .icon-row .icon-item:nth-child(n+4) {
+      display: none; /* hides items 4 and 5 on small screens */
+    }
+    /* Slightly smaller icons on mobile (optional) */
+    :root { --icon-size: 48px; }
+  }
 	</style>
 
 	<header>
@@ -147,6 +178,28 @@
     <li>3+ years as an Ecommerce Analyst and Optimization</li>
     <li>Google Analytics, Excel, SQL & Power BI</li>
   </ul>
+
+  <ul class="icon-row" role="list">
+	  <li class="icon-item">
+	    <img class="icon" src="https://ecommerce-by-alyson.github.io/icons/google-analytics.png" alt="SQL Data Analysis">
+	  </li>
+
+	  <li class="icon-item">
+	  	<img class="icon" src="https://ecommerce-by-alyson.github.io/icons/looker-studio.png" alt="SQL Data Analysis">
+	  </li>
+
+	  <li class="icon-item">
+		<img class="icon" src="https://ecommerce-by-alyson.github.io/icons/power-bi.png" alt="SQL Data Analysis">	
+	  </li>
+
+	  <li class="icon-item">
+		<img class="icon" src="https://ecommerce-by-alyson.github.io/icons/sql-analysis.png" alt="SQL Data Analysis">
+	  </li>
+
+	  <li class="icon-item">
+		<img class="icon" src="https://ecommerce-by-alyson.github.io/icons/excel.png" alt="SQL Data Analysis">
+	  </li>
+</ul>
 
   <h3>Portfolio</h3>
   <ul>
