@@ -70,12 +70,16 @@
 	  a {
 	    text-decoration: none;
 	    color: #1a73e8; /* bright blue accent */
-	    font-weight: 500;
+	    font-weight: 200;
 	  }
 
 	  a:hover {
 	    color: #0d47a1;
 	    text-decoration: underline;
+	  }
+
+	  li.portfolio-item {
+	  	padding-left: 20px;
 	  }
 
 	  /* === Layout Containers === */
@@ -99,7 +103,7 @@
 	  nav a {
 	    color: white;
 	    margin: 0 1rem;
-	    font-weight: 500;
+	    font-weight: 200;
 	  }
 
 	  nav a:hover {
@@ -137,30 +141,24 @@
 
 <div class="container">
   <h2 id="about">About Me</h2>
-  <p>A data and optimization geek excited by new data challenges</p>
+<!--   <p>A data and optimization geek excited by new data challenges</p> -->
   <ul>
-    <li>3+ years as an Ecommerce Analyst, 8+ years in Project Management</li>
-    <li>My top 3: data analytics, optimization insights and customer journey analysis</li>
+    <li><b>My top 3:</b> data analytics, optimization insights and customer journey analysis</li>
+    <li>3+ years as an Ecommerce Analyst and Optimization</li>
     <li>Google Analytics, Excel, SQL & Power BI</li>
   </ul>
 
   <h3>Portfolio</h3>
   <ul>
-    <li>
-    	<center><a href="https://github.com/ecommerce-by-alyson/netflix_analysis/blob/main/README.md">
-    		<img src="https://raw.githubusercontent.com/ecommerce-by-alyson/netflix_analysis/4980ba52abf2079aae7260f4474cf0000d94bc04/data/netflix-dashboard-view.png" alt="Netflix Engagement Dashboard Preview" width="300">
-    		<p><img src="https://ecommerce-by-alyson.github.io/icons/power-bi.png" alt="Power BI Analysis" width="50">Netflix Engagement Dashboard</p>
-		</a></center>
+    <li class="portfolio-item"><a href="https://github.com/ecommerce-by-alyson/netflix_analysis/blob/main/README.md">
+    		<p><img src="https://ecommerce-by-alyson.github.io/icons/power-bi.png" alt="Power BI Analysis" width="40"> Netflix Engagement Dashboard</p>
 	</li>
-	<li>
-    	<center><a href="https://github.com/ecommerce-by-alyson/food-claim-analysis-brazil/blob/main/README.md">
-    		 <p><img src="https://ecommerce-by-alyson.github.io/icons/sql-analysis.png" alt="SQL Data Analysis" width="50"><img src="https://ecommerce-by-alyson.github.io/icons/excel.png" alt="Advanced Excel Data Analysis" width="50">Restaurant Claims Analysis</p>
-		</a></center>
+	<li class="portfolio-item"><a href="https://github.com/ecommerce-by-alyson/food-claim-analysis-brazil/blob/main/README.md">
+    		 <p><img src="https://ecommerce-by-alyson.github.io/icons/sql-analysis.png" alt="SQL Data Analysis" width="20"> <img src="https://ecommerce-by-alyson.github.io/icons/excel.png" alt="Advanced Excel Data Analysis" width="20"> Restaurant Claims Analysis</p>
 	</li>
-	<li>
-    	<center><a href="https://www.dropbox.com/scl/fi/o7n8se4f06l13qdve19mf/Alyson-Hendrix-SQL-Query-Examples.pdf?rlkey=0s38k4qo0mdq9zw3jaobg49sw&st=8fdl7ab3&dl=0">
-    		 <p><img src="https://ecommerce-by-alyson.github.io/icons/sql-analysis.png" alt="SQL Data Analysis" width="50">DataLemur SQL Drills</p>
-		</a></center>
+	<li class="portfolio-item"><a href="https://www.dropbox.com/scl/fi/o7n8se4f06l13qdve19mf/Alyson-Hendrix-SQL-Query-Examples.pdf?rlkey=0s38k4qo0mdq9zw3jaobg49sw&st=8fdl7ab3&dl=0">
+    		 <p><img src="https://ecommerce-by-alyson.github.io/icons/sql-analysis.png" alt="SQL Data Analysis" width="20"> DataLemur SQL Drills</p>
+		</a>
 	</li>
   </ul>
 
